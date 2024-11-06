@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Moja Osebna Spletna Stran</title>
+    <style>
+        /* Osnovni stil */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F4F1E1; /* Zemeljska svetla barva */
+            color: #333;
+        }
+
+        header {
+            background-color: #4E4A42; /* Temna zemeljska barva */
+            color: #FFF;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header img {
+            max-width: 150px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        p {
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .bio {
+            font-size: 1.1rem;
+            margin-top: 20px;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .social-links a {
+            margin: 10px;
+            color: #4E4A42;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        .contact-form button {
+            background-color: #4E4A42;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #4E4A42;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+        .button-contact {
+            background-color: #7C6B3D; /* Osvetljena zemeljska barva za gumb */
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Glava (header) -->
+    <header>
+        <img src="logotip.png" alt="Logotip">
+        <h1>Tvoje Ime</h1>
+        <p>Opis, ki se predstavi na začetni strani.</p>
+        <a href="#contact" class="button-contact">Kontaktiraj me</a>
+    </header>
+
+    <!-- Biografija -->
+    <section id="bio">
+        <h2>O meni</h2>
+        <p class="bio">
+            Tukaj lahko vključiš svojo biografijo, nekaj o sebi, tvojem delu, strastih in izkušnjah.
+        </p>
+    </section>
+
+    <!-- Galerija slik -->
+    <section id="gallery">
+        <h2>Galerija</h2>
+        <div class="gallery">
+            <img src="slika1.jpg" alt="Slika 1">
+            <img src="slika2.jpg" alt="Slika 2">
+            <img src="slika3.jpg" alt="Slika 3">
+            <!-- Dodaj še več slik po potrebi -->
+        </div>
+    </section>
+
+    <!-- Socialna omrežja -->
+    <section id="social">
+        <h2>Spremljaj me na socialnih omrežjih</h2>
+        <div class="social-links">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <!-- Dodaj še povezave do drugih socialnih omrežij -->
+        </div>
+    </section>
+
+    <!-- Cenik -->
+    <section id="pricing">
+        <h2>Cenik</h2>
+        <p>Tu lahko vključiš cenik svojih storitev, če se ukvarjaš s kakšnimi storitvami, svetovanjem ali drugimi dejavnostmi.</p>
+        <ul>
+            <li>Storitve 1: Cena</li>
+            <li>Storitve 2: Cena</li>
+            <!-- Dodaj ostale storitve in cene -->
+        </ul>
+    </section>
+
+    <!-- Kontaktni obrazec -->
+    <section id="contact">
+        <h2>Kontaktiraj me</h2>
+        <form class="contact-form">
+            <input type="text" name="name" placeholder="Tvoje ime" required>
+            <input type="email" name="email" placeholder="Tvoj email" required>
+            <textarea name="message" rows="4" placeholder="Tvoje sporočilo" required></textarea>
+            <button type="submit">Pošlji sporočilo</button>
+        </form>
+    </section>
+
+    <!-- Noga (footer) -->
+    <footer>
+        <p>© 2024 Tvoje Ime. Vse pravice pridržane.</p>
+    </footer>
+</body>
